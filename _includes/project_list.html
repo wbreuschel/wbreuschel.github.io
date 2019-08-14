@@ -1,0 +1,8 @@
+<h2>Projects</h2>
+<ul>
+{% for project in site.projects %}
+  <li>    
+      {{ project.name }} - {{ project.dates }}
+  </li>
+{% endfor %}
+</ul>
