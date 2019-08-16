@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {%- include head.html -%}
+{%- include head.html -%}
 
-  <body>
+<body>
+  wfaeweafwaeafa
+  <div class="container">
+    {%- include header.html -%}
+    <header class="mb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="page-heading">
+              <h1>{{ site.title }}</h1>
+              <span class="subheading"><a
+                  href="https://www.linkedin.com/in/william-reuschel/">{{ site.description }}</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <div class="container">
-    {%- include header.html -%}
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          {{ content }}
+        </div>
       </div>
-    </main>
+      </main>
 
-    {%- include footer.html -%}
-  </div>
-  </body>
+      {%- include footer.html -%}
+    </div>
+</body>
 
 </html>
