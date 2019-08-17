@@ -2,8 +2,8 @@
   {% for project in site.projects %}
   {% capture project_id %}project-title-{{forloop.index}}{% endcapture %}
   <div class="col-lg-4 col-sm-6 col-md-6">
-    <div class="card">
-      <a href="{{project.url}}">
+    <div class="card clickable" onclick="window.location.href = '{{project.url}}'">
+      <!-- <a href="{{project.url}}"> -->
         {% if project.thumbnail %}
         <img aria-labelledby="{{project_id}}" class="card-img-top" src="{{project.thumbnail}}">
         {% else %}
@@ -11,14 +11,15 @@
         {% endif %}
 
         <div class="card-body">
-          <h2 id="{{project_id}}">{{ project.title }}
-          </h2>
+            <a href="{{project.url}}">
+          <h2 id="{{project_id}}">{{ project.title }}</h2>
+          </a>
 
           <p>{{ project.dates }}</p>
           <p class="lead">Status</p>
           <p class="card-text">Front end, back end, framework</p>
         </div>
-      </a>
+      <!-- </a> -->
     </div>
   </div>
 
