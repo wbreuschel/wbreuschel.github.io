@@ -1,0 +1,17 @@
+@import "bootstrap/bootstrap", "_variables";
+@import "_project_list";
+.svg-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    fill: #{$gray-700};
+    top: 2px;
+    position: relative;
+    margin-right: 0.5rem;
+  }
+  .site-header {
+    margin-top: 10rem;
+  }
+  .username {
+    font-size: 1.2rem;
+  }

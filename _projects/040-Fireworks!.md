@@ -5,6 +5,6 @@ project_url: https://fireworks.weej.info
 status: Complete
 dates: 2018-2019
 screenshot: /assets/projects/fireworks.png
-thumbnail: projects/fireworks_thumb.png
+thumbnail: /assets/projects/fireworks_thumb.png
 ---
 test
