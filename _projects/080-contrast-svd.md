@@ -1,15 +1,15 @@
 ---
-title: 4 to 24
+title: Optics Lab
 layout: project
-status: Under Development
-dates: 2017-present
-project_url: https://4to24.org/
-screenshot: /assets/projects/4to24.png
-thumbnail: /assets/projects/4to24-thumb.png
+status: Retired
+dates: 2008-2013
+screenshot: /assets/projects/opticslab.jpg
+thumbnail: /assets/projects/opticslab-thumb.jpg
 tags:
-    - Django
-    - NativeScript    
-    - Firebase Cloud Messaging
+    - C++/CLI
+    - Canon SDK
+    - serial interface
+    - image processing
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit ut tortor pretium viverra. Felis eget velit aliquet sagittis id consectetur purus. Tristique nulla aliquet enim tortor at. Nam aliquam sem et tortor consequat id porta nibh venenatis. Diam sollicitudin tempor id eu nisl nunc. Fringilla urna porttitor rhoncus dolor purus non. In eu mi bibendum neque egestas congue. Eu augue ut lectus arcu bibendum at varius vel pharetra. Tellus molestie nunc non blandit massa enim nec.
 

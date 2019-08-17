@@ -4,21 +4,29 @@
   <div class="col-lg-4 col-sm-6 col-md-6">
     <div class="card clickable" onclick="window.location.href = '{{project.url}}'">
       <!-- <a href="{{project.url}}"> -->
-        {% if project.thumbnail %}
-        <img aria-labelledby="{{project_id}}" class="card-img-top" src="{{project.thumbnail}}">
-        {% else %}
-        <img class="card-img-top" aria-labelledby="{{project_id}}" src="https://via.placeholder.com/250">
-        {% endif %}
+      {% if project.thumbnail %}
+      <img aria-labelledby="{{project_id}}" class="card-img-top" src="{{project.thumbnail}}">
+      {% else %}
+      <img class="card-img-top" alt="" src="https://via.placeholder.com/250">
+      {% endif %}
 
-        <div class="card-body">
-            <a href="{{project.url}}">
+      <div class="card-body">
+        <a href="{{project.url}}">
           <h2 id="{{project_id}}">{{ project.title }}</h2>
-          </a>
+        </a>
 
-          <p>{{ project.dates }}</p>
-          <p class="lead">Status</p>
-          <p class="card-text">Front end, back end, framework</p>
-        </div>
+        <p>{{ project.dates }}</p>
+        <p class="lead">{{project.status}}</p>
+      </div>
+      {% if project.tags %}
+
+      <div class="card-footer">
+        {% for tag in project.tags %}
+        {{tag}}{% if forloop.last != true %},
+        {% endif %}
+        {% endfor %}
+      </div>
+      {% endif %}
       <!-- </a> -->
     </div>
   </div>

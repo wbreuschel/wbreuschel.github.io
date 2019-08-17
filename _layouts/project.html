@@ -7,23 +7,25 @@ layout: wide
         <a href="/">back</a>
     </header>
 
-    <div class="row">
-        <div class="col-md-6">
 
-            <h1 class="display-4">{{ page.title | escape }}</h1>
-            {% if page.project_url %}
-                <a href={{page.project_url}} title="demo">{{page.project_url}}</a>
-            {% endif %}
-            <p>{{page.dates}}</p>
-            <p>status: {{page.status}}</p>
-        </div>
-        <div class="col-md-6">
-            <img width="100%" src="{{page.screenshot}}">
-        </div>
-    </div>
+    <h1 class="display-4">{{ page.title | escape }}</h1>
+    {% if page.screenshot %}
+    <a href="{{page.screenshot}}"><img class="project-screenshot" src="{{page.screenshot}}"></a>
+    {% endif %}
+
+    {% if page.project_url %}
+    <p>
+        Project URL: <a href={{page.project_url}} title="demo">{{page.project_url}}</a>
+    </p>
+    {% endif %}
+    <p>{{page.dates}}</p>
+    <p>Status: {{page.status}}</p>
+    <p>Tools: {% for tag in page.tags %}
+        {{tag}}{% if forloop.last != true %},
+        {% endif %}
+        {% endfor %}</p>
     <div class="body">
-
-        {{ content }}
-    </div>
+        <h2>Details</h2>
+        {{ content }}      
 
 </article>
